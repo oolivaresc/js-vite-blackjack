@@ -6,7 +6,7 @@
  */
 export const crearCarta = (carta, turno, divCartasJugadores) => {
     if(!carta) throw new Error ('carta es obligatorio');    
-    if(!turno) throw new Error ('turno es obligatorio');    
+    if(turno === undefined || turno == null) throw new Error ('turno es obligatorio!');    
     if(!divCartasJugadores) throw new Error ('divCartasJugadores es obligatorio');    
 
     const imgCarta = document.createElement('img');

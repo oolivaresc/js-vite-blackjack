@@ -9,7 +9,6 @@ import { valorCarta } from "./";
  * @returns retorna los puntos acumulados de un jugador
  */
 export const acumularPuntos = (carta, turno, puntosJugadores, puntosHTML) =>{
-    turno = null;
     if(!carta) throw new Error ('carta es obligatorio');    
     if(turno === undefined || turno == null) throw new Error ('turno es obligatorio');    
     if(!puntosJugadores || puntosJugadores.length === 0) throw new Error ('puntosJugadores es obligatorio');    
